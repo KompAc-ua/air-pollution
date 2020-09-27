@@ -3,15 +3,16 @@ import "./HeroBlock.scss";
 
 const HeroBlock = ({ logos, title, links }) => {
   //   const bgCSS = { background: `url(${bgImg})` };
-  const logosImg = logos.map((logoItem) => (
+  const logosImg = logos.map((logoItem, i) => (
     <img
       src={logoItem}
       alt="partner logo"
       className="hero-partners-logo-item"
+      key={i}
     />
   ));
-  const navLinks = links.map((link) => (
-    <a className="hero-navigation-item" href={link.href}>
+  const navLinks = links.map((link, i) => (
+    <a className="hero-navigation-item" href={link.href} key={i}>
       {link.title}
     </a>
   ));
