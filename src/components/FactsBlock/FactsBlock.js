@@ -32,7 +32,7 @@ const FactsBlock = ({ title, slides }) => {
         }}
         slidesPerView={3}
         spaceBetween={40}
-        centeredSlides={true}
+        centeredSlides={false}
         slidesPerGroup={3}
       >
         {factsSlides}

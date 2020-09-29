@@ -6,10 +6,16 @@ import FactsBlock from "./components/FactsBlock/FactsBlock";
 import globalLogo from "./assets/global_logo.svg";
 import itnLogo from "./assets/itn_logo.svg";
 import shidLogo from "./assets/shid_logo.svg";
+import footerGlobalLogo from "./assets/FooterImg/footer_global_logo.svg";
+import footerItnLogo from "./assets/FooterImg/footer_ITN_logo.svg";
+import footerShidLogo from "./assets/FooterImg/footer_shid_logo.svg";
 import PolicyBlock from "./components/PolicyBlock/PollicyBlock";
+import Footer from "./components/Footer/Foter";
+import AirQuality from "./components/AirQuality/AirQuality";
 
 function App() {
-  const partners = [shidLogo, itnLogo, globalLogo];
+  const partnersLogo = [shidLogo, itnLogo, globalLogo];
+  const footerPartnersLogo = [footerShidLogo, footerItnLogo, footerGlobalLogo];
   const navLinks = [
     { title: "Основные факты", href: "#facts" },
     { title: "Индекс качества воздуха", href: "#index" },
@@ -85,11 +91,12 @@ function App() {
   return (
     <>
       <HeroBlock
-        logos={partners}
+        logos={partnersLogo}
         title="Качество атмосферного воздуха и здоровье"
         links={navLinks}
       />
       <FactsBlock title="Основные факты" slides={factsSlides} />
+      <AirQuality />
       <PolicyBlock
         title="Политика по уменьшению загрязнений"
         subtitle="Есть много примеров успешной политики 
@@ -97,6 +104,7 @@ function App() {
          городское планирование, энергетика и промышленность:"
         items={policyItems}
       />
+      <Footer links={navLinks} partnersLogo={footerPartnersLogo} />
     </>
   );
 }

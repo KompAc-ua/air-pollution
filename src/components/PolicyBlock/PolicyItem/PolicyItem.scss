@@ -13,9 +13,8 @@
   margin-bottom: 30px;
   display: flex;
   align-items: center;
-  // justify-content: center;
+
   &-tooltip {
-    // display: none;
     position: absolute;
     pointer-events: none;
     appearance: none;
@@ -24,10 +23,9 @@
     padding: 16px 16px 16px 75px;
     background-color: #dadada;
     clip-path: polygon(100% 0, 100% 100%, 75px 100%, 0 50%, 75px 0);
-
     z-index: 1;
-    animation-name: tooltip-opacity;
-    animation-duration: 0.3s;
+    animation: tooltip-opacity 0.3s ease-in-out;
+
     &-switched {
       clip-path: polygon(
         calc(100% - 75px) 0,
@@ -41,6 +39,7 @@
       padding: 16px 75px 16px 16px;
     }
   }
+
   &-name {
     width: 100%;
     text-align: center;
