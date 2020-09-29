@@ -1,5 +1,7 @@
 .facts {
-  padding: 100px 0px 50px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 100px 60px 50px;
   &-title {
     font-weight: normal;
     font-size: 35px;
@@ -7,5 +9,39 @@
     color: #ffffff;
     text-align: center;
     margin-bottom: 30px;
+  }
+  & > .swiper-button-prev,
+  .swiper-button-next {
+    color: #b78a3f;
+    top: 44%;
+  }
+  & > .swiper-button-prev {
+    left: -10px;
+  }
+  & > .swiper-button-next {
+    right: -10px;
+  }
+  & > .swiper-button-disabled {
+    opacity: 0;
+    transition: 0.3s opacity;
+  }
+  &-pagination {
+    display: flex;
+    justify-content: center;
+
+    &-bullet {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 2px solid #b78a3f;
+      margin: 0px 40px;
+      opacity: 1;
+      transition: 0.3s background-color;
+    }
+    & > .swiper-pagination-bullet-active {
+      background-color: #b78a3f;
+    }
   }
 }

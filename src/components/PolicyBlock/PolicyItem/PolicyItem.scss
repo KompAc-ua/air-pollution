@@ -1,0 +1,53 @@
+@keyframes tooltip-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.policy-item {
+  position: relative;
+  width: calc((100% / 3) - 94px);
+  height: 240px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  &-tooltip {
+    // display: none;
+    position: absolute;
+    pointer-events: none;
+    appearance: none;
+    left: 100%;
+    width: 400px;
+    padding: 16px 16px 16px 75px;
+    background-color: #dadada;
+    clip-path: polygon(100% 0, 100% 100%, 75px 100%, 0 50%, 75px 0);
+
+    z-index: 1;
+    animation-name: tooltip-opacity;
+    animation-duration: 0.3s;
+    &-switched {
+      clip-path: polygon(
+        calc(100% - 75px) 0,
+        100% 50%,
+        calc(100% - 75px) 100%,
+        0 100%,
+        0 0
+      );
+      left: initial;
+      right: 100%;
+      padding: 16px 75px 16px 16px;
+    }
+  }
+  &-name {
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
+    background: rgba(255, 255, 255, 0.83);
+    color: #222222;
+  }
+}
