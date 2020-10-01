@@ -56,8 +56,19 @@
   }
 }
 @media screen and (max-width: 1040px) {
-  .policy-list {
-    // flex-wrap: wrap;
-    justify-content: space-around;
+  .policy {
+    &-list {
+      // flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &-title {
+      font-weight: normal;
+      font-size: 27px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+    &-subtitle {
+      display: none;
+    }
   }
 }

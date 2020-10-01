@@ -19,3 +19,21 @@
     color: #ffffff;
   }
 }
+@media (max-width: 720px) {
+  .air-q {
+    &-title {
+      font-weight: normal;
+      font-size: 27px;
+      line-height: 32px;
+    }
+    &-text {
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 20px;
+      margin: 0px 20px;
+    }
+    &-map {
+      margin: 20px 20px;
+    }
+  }
+}

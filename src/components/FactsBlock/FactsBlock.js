@@ -10,7 +10,6 @@ import "./FactsBlock.scss";
 
 SwiperCore.use([Navigation, Pagination]);
 const FactsBlock = ({ winSize, title, slides }) => {
-  console.log(winSize);
   const factsSlides = slides.map((slide) => (
     <SwiperSlide key={slide.id}>
       <FactsItem item={slide.text} img={slide.imgUrl} />
@@ -32,6 +31,11 @@ const FactsBlock = ({ winSize, title, slides }) => {
           renderBullet: function (index, className) {
             return `<span class="facts-pagination-bullet ${className}"></span>`;
           },
+        }}
+        effect="coverflow"
+        coverflowEffect={{
+          rotate: 30,
+          slideShadows: true,
         }}
         slidesPerView={2}
         spaceBetween={20}

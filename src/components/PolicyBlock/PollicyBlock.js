@@ -2,9 +2,14 @@ import React from "react";
 import "./PolicyBlock.scss";
 import PolicyItem from "./PolicyItem/PolicyItem";
 
-const PolicyBlock = ({ title, subtitle, items }) => {
+const PolicyBlock = ({ winSize, title, subtitle, items }) => {
   const itemList = items.map((policyItems, i) => (
-    <PolicyItem policyItems={policyItems} number={i + 1} key={i} />
+    <PolicyItem
+      winSize={winSize}
+      policyItems={policyItems}
+      number={i + 1}
+      key={i}
+    />
   ));
   return (
     <section className="policy container" id="policy">
