@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/air-pollution/static/css/main.ea267008.chunk.css",
-    "main.js": "/air-pollution/static/js/main.29791b8d.chunk.js",
-    "main.js.map": "/air-pollution/static/js/main.29791b8d.chunk.js.map",
+    "main.js": "/air-pollution/static/js/main.ca341b57.chunk.js",
+    "main.js.map": "/air-pollution/static/js/main.ca341b57.chunk.js.map",
     "runtime-main.js": "/air-pollution/static/js/runtime-main.8199f09a.js",
     "runtime-main.js.map": "/air-pollution/static/js/runtime-main.8199f09a.js.map",
     "static/css/2.b709d5ac.chunk.css": "/air-pollution/static/css/2.b709d5ac.chunk.css",
     "static/js/2.3338570b.chunk.js": "/air-pollution/static/js/2.3338570b.chunk.js",
     "static/js/2.3338570b.chunk.js.map": "/air-pollution/static/js/2.3338570b.chunk.js.map",
     "index.html": "/air-pollution/index.html",
-    "precache-manifest.894788f6a6901d4a32a87bbe14f168eb.js": "/air-pollution/precache-manifest.894788f6a6901d4a32a87bbe14f168eb.js",
+    "precache-manifest.b0c9037d79f0ba6997034f49ebbeecc8.js": "/air-pollution/precache-manifest.b0c9037d79f0ba6997034f49ebbeecc8.js",
     "service-worker.js": "/air-pollution/service-worker.js",
     "static/css/2.b709d5ac.chunk.css.map": "/air-pollution/static/css/2.b709d5ac.chunk.css.map",
     "static/css/main.ea267008.chunk.css.map": "/air-pollution/static/css/main.ea267008.chunk.css.map",
@@ -39,6 +39,6 @@
     "static/css/2.b709d5ac.chunk.css",
     "static/js/2.3338570b.chunk.js",
     "static/css/main.ea267008.chunk.css",
-    "static/js/main.29791b8d.chunk.js"
+    "static/js/main.ca341b57.chunk.js"
   ]
 }
