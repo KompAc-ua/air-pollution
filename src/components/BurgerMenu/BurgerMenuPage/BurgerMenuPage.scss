@@ -1,0 +1,42 @@
+.burgerpage {
+  max-width: 100%;
+  position: absolute;
+  background-color: #737373;
+  right: 0;
+  left: 0;
+  &-links {
+    display: flex;
+    flex-flow: wrap;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    &-item {
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 27px;
+
+      color: #ffffff;
+      text-decoration: none;
+      width: fit-content;
+      margin-bottom: 40px;
+      &:first-child {
+        margin-top: 247px;
+      }
+      &:last-child {
+        margin-bottom: 279px;
+      }
+    }
+  }
+  &-footer-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 31px;
+    &:last-child {
+      margin-bottom: 39px;
+    }
+  }
+}

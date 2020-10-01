@@ -3,12 +3,9 @@ import "./Footer.scss";
 
 const Footer = ({ partnersLogo, links }) => {
   const partnersLogoItems = partnersLogo.map((logos, i) => (
-    <img
-      key={i}
-      src={logos}
-      alt="partners logo"
-      className="footer-partners-item"
-    />
+    <div className="footer-partners-item" key={i}>
+      <img src={logos} alt="partners logo" />
+    </div>
   ));
   const navLinks = links.map((link, i) => (
     <a className="footer-nav-link" href={link.href} key={i}>

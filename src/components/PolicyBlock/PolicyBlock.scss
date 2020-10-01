@@ -18,6 +18,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    // align-items: flex-start;
+
+    // display: grid;
+    // grid-template-rows: 209px 209px;
+    // grid-template-columns: 341px 341px 341px;
+    // column-gap: 10%;
+    // row-gap: 30px;
+
     // &-item {
     //   position: relative;
     //   width: calc((100% / 3) - 94px);
@@ -44,5 +53,11 @@
     //     color: #222222;
     //   }
     // }
+  }
+}
+@media screen and (max-width: 1040px) {
+  .policy-list {
+    // flex-wrap: wrap;
+    justify-content: space-around;
   }
 }

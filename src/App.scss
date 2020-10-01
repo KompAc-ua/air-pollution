@@ -5,8 +5,20 @@
 }
 body {
   background-color: #737373;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 .container {
   max-width: 1283px;
   margin: 0 auto;
+}
+@media (max-width: 1283px) {
+  .container {
+    max-width: 95%;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    max-width: 100%;
+  }
 }

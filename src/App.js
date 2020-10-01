@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import HeroBlock from "./components/HeroBlock/HeroBlock";
+// import HeroBlockMobile from "./components/HeroBlockMobile/HeroBlockMobile";
 import FactsBlock from "./components/FactsBlock/FactsBlock";
 
 import globalLogo from "./assets/global_logo.svg";
@@ -9,11 +10,14 @@ import shidLogo from "./assets/shid_logo.svg";
 import footerGlobalLogo from "./assets/FooterImg/footer_global_logo.svg";
 import footerItnLogo from "./assets/FooterImg/footer_ITN_logo.svg";
 import footerShidLogo from "./assets/FooterImg/footer_shid_logo.svg";
+import arrow from "./assets/arrow.svg";
 import PolicyBlock from "./components/PolicyBlock/PollicyBlock";
 import Footer from "./components/Footer/Foter";
 import AirQuality from "./components/AirQuality/AirQuality";
+import { useScreenSize } from "./components/Utility/useScreenSize";
 
 function App() {
+  const winSize = useScreenSize();
   const partnersLogo = [shidLogo, itnLogo, globalLogo];
   const footerPartnersLogo = [footerShidLogo, footerItnLogo, footerGlobalLogo];
   const navLinks = [
@@ -91,11 +95,17 @@ function App() {
   return (
     <>
       <HeroBlock
+        arrow={arrow}
+        winSize={winSize}
         logos={partnersLogo}
         title="Качество атмосферного воздуха и здоровье"
         links={navLinks}
       />
-      <FactsBlock title="Основные факты" slides={factsSlides} />
+      <FactsBlock
+        winSize={winSize}
+        title="Основные факты"
+        slides={factsSlides}
+      />
       <AirQuality />
       <PolicyBlock
         title="Политика по уменьшению загрязнений"
